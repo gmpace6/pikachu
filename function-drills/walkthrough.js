@@ -5,7 +5,7 @@ pikachuHp = String(pikachuHp)
     
 let shieldonHp = 120
 
-let theWinnerIs = 'The winner is Pikachu'
+let theWinnerIs = 'The winner is: Pikachu!'
 
 theWinnerIs.replace('Pikachu', 'Shieldon')
 
@@ -16,4 +16,8 @@ if (theWinnerIs.includes('Pikachu')){
   }  else{
         console.log('pikachus dies')
     }
-
+let kebabCase = theWinnerIs.replace(':','')
+kebabCase = kebabCase.replace('!','')
+kebabCase = kebabCase.replaceAll(' ',"-")
+kebabCase = kebabCase.toLowerCase()
+console.log(kebabCase)
