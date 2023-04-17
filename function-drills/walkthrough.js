@@ -18,6 +18,13 @@ if (theWinnerIs.includes('Pikachu')){
     }
 let kebabCase = theWinnerIs.replace(':','')
 kebabCase = kebabCase.replace('!','')
-kebabCase = kebabCase.replaceAll(' ',"-")
 kebabCase = kebabCase.toLowerCase()
-console.log(kebabCase)
+
+// way 1
+// kebabCase = kebabCase.replaceAll(' ',"-")
+// console.log(kebabCase)
+
+// way 2
+// let kebabCaseWordArray = kebabCase.split(' ')
+// kebabCaseWordArray = kebabCaseWordArray.join('-')
+// console.log(kebabCaseWordArray)
