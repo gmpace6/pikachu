@@ -8,4 +8,11 @@ let shieldonHp = 120
 let theWinnerIs = 'The winner is Pikachu'
 
 theWinnerIs.replace('Pikachu', 'Shieldon')
-console.log(theWinnerIs)
+
+// console.log(theWinnerIs)
+
+if (){
+    else{
+        
+    }
+}
