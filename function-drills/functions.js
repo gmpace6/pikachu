@@ -23,3 +23,23 @@ if (isAlive(pikachuHp, shieldonAttack)){
     console.log('Pikachu is no more.')
 }
 
+const attack = (defenderHp, attackerAttack) => defenderHp - attackerAttack
+const diceRollMaker = () => Math.floor(Math.random() * 6 + 1)
+const diceRoll = diceRollMaker()
+
+
+for (let i = 0; i < diceRoll; i++) {
+    console.log('Shieldon attacks Pikachu!')
+    if (isAlive(pikachuHp)) {
+        pikachuHp = attack(pikachuHp, shieldonAttack)
+        console.log('Pikachu HP at ' + pikachuHp)
+    } else {
+        break;
+    }
+}
+
+if (isAlive(pikachuHp)){
+    console.log('Pikachu wins')
+}else {
+    console.log('Shieldon has won.')
+}
