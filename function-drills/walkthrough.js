@@ -11,8 +11,9 @@ theWinnerIs.replace('Pikachu', 'Shieldon')
 
 // console.log(theWinnerIs)
 
-if (){
-    else{
-        
+if (theWinnerIs.includes('Pikachu')){
+    console.log('Pikachus is epic!')
+  }  else{
+        console.log('pikachus dies')
     }
-}
+
